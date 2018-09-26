@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted black; }
+
+.header {
+  width: 100%;
+  color: #f7faff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 20px; }
+  .header h2 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 18px;
+    cursor: pointer; }
+
+.footer {
+  color: #f7faff;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .footer .footerSection h2 {
+    font-size: 18px; }
+
+.body {
+  width: 100%;
+  min-height: 35%; }
+  .body .bodySection {
+    border-radius: 20px;
+    margin: 38vh auto;
+    padding: 1% 5% 25px 5%;
+    background-color: #edf2f9;
+    color: #3b3c3f;
+    width: 45%; }
+    .body .bodySection h3 {
+      text-align: center; }
+    .body .bodySection .userInput {
+      display: flex;
+      flex-direction: row;
+      background-color: #eee;
+      border-radius: 10px;
+      margin-top: 25px;
+      padding: 5px 5px 5px 5px; }
+      .body .bodySection .userInput p {
+        color: #b4b9ba; }
+      .body .bodySection .userInput input {
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 3px; }
+    .body .bodySection button {
+      background-color: #3b4047;
+      color: #f7faff;
+      width: 100%;
+      margin: 10px auto;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      opacity: 0.8; }
+    .body .bodySection button:hover {
+      opacity: 1;
+      transition: .5s; }
+
+.main {
+  background-image: url("./img/desktop.png");
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100vw; }
+
+@media screen and (max-width: 550px) {
+  .body {
+    width: 100%; }
+    .body .bodySection {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0; }
+
+  .footer {
+    display: inline-block; }
+    .footer h2 {
+      text-align: center;
+      text-shadow: 1px 1px black; }
+
+  .main {
+    background-image: url("./img/mobile.png"); } }
+
+/*# sourceMappingURL=style.css.map */

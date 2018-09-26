@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    color: $colors_fonts_secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+    h2 {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

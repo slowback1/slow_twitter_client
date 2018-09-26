@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'reset';
+@import 'header';
+@import 'footer';
+@import 'body';
+
+.main {
+    background-image: url('./img/desktop.png');
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+@media screen and (max-width: 550px) {
+    @import 'mobile/main';
+}

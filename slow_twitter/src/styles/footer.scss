@@ -1,0 +1,14 @@
+.footer {
+    color: $colors_fonts_secondary;
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .footerSection {
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
