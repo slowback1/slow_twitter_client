@@ -6,7 +6,7 @@ import './styles/style.css';
 import fetch from 'node-fetch';
 
 
-const url = "";
+const url = "https://slow-project-october-server-slowback1.c9users.io/user";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -35,7 +35,7 @@ class App extends Component {
             name: "user",
             postUser: user
         }
-        console.log(user);
+        let textAnchor = document.getElementById("wordCloud");
         let params = {
             headers: {
                 "Content-Type":"application/json; charset=UTF-8"
@@ -47,7 +47,7 @@ class App extends Component {
         };
         fetch(url, params)
             .then(data=>{return data.json()})
-            .then(res=>{console.log(res)})
+            .then(res=>{textAnchor.innerHTML = res.tweets})
             .catch(error=>console.log(error));
     }
     onChange(e) {
