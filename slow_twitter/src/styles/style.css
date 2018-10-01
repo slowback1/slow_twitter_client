@@ -43,6 +43,15 @@ a {
     width: 45%; }
     .body .bodySection h3 {
       text-align: center; }
+    .body .bodySection .errorSection {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid #e83a3a;
+      padding: 5px 0 5px 0; }
+      .body .bodySection .errorSection h4 {
+        font-size: 16px;
+        color: #e83a3a;
+        text-align: center; }
     .body .bodySection .userInput {
       display: flex;
       flex-direction: row;
